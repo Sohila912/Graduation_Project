@@ -1,0 +1,350 @@
+
+*** Running vivado
+    with args -log OD_Main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source OD_Main.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source OD_Main.tcl -notrace
+Command: synth_design -top OD_Main -part xc7a200tffg1156-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12456 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 355.832 ; gain = 99.125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'OD_Main' [D:/College/Graduation Project/GP_COLLISION1/OD_Main.sv:1]
+	Parameter SAFE_DIST_TIME bound to: DISTANCE - type: string 
+INFO: [Synth 8-6157] synthesizing module 'OD_distance' [D:/College/Graduation Project/GP_COLLISION1/OD_Distance.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'OD_distance' (1#1) [D:/College/Graduation Project/GP_COLLISION1/OD_Distance.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'OD_ultrasonic' [D:/College/Graduation Project/GP_COLLISION1/OD_ultrasonic.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'OD_Counter' [D:/College/Graduation Project/GP_COLLISION1/OD_Counter.sv:1]
+	Parameter n bound to: 32'sb00000000000000000000000000010110 
+INFO: [Synth 8-6155] done synthesizing module 'OD_Counter' (2#1) [D:/College/Graduation Project/GP_COLLISION1/OD_Counter.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'OD_Trig_gen' [D:/College/Graduation Project/GP_COLLISION1/OD_Trig_gen.sv:1]
+	Parameter ms100 bound to: 24'b010011000100101101000000 
+	Parameter ms100And20us bound to: 24'b010011000100110100110011 
+INFO: [Synth 8-6157] synthesizing module 'OD_Counter__parameterized0' [D:/College/Graduation Project/GP_COLLISION1/OD_Counter.sv:1]
+	Parameter n bound to: 32'sb00000000000000000000000000011000 
+INFO: [Synth 8-6155] done synthesizing module 'OD_Counter__parameterized0' (2#1) [D:/College/Graduation Project/GP_COLLISION1/OD_Counter.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'OD_Trig_gen' (3#1) [D:/College/Graduation Project/GP_COLLISION1/OD_Trig_gen.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'OD_ultrasonic' (4#1) [D:/College/Graduation Project/GP_COLLISION1/OD_ultrasonic.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'OD_Main' (5#1) [D:/College/Graduation Project/GP_COLLISION1/OD_Main.sv:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 409.734 ; gain = 153.027
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 409.734 ; gain = 153.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 409.734 ; gain = 153.027
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tffg1156-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/College/Graduation Project/GP_COLLISION1/Constraints_basys3.xdc]
+Finished Parsing XDC File [D:/College/Graduation Project/GP_COLLISION1/Constraints_basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/College/Graduation Project/GP_COLLISION1/Constraints_basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/OD_Main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/OD_Main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 812.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:56 ; elapsed = 00:01:16 . Memory (MB): peak = 812.766 ; gain = 556.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tffg1156-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:56 ; elapsed = 00:01:16 . Memory (MB): peak = 812.766 ; gain = 556.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:01:16 . Memory (MB): peak = 812.766 ; gain = 556.059
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'OD_distance'
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "resetCounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/College/Graduation Project/GP_COLLISION1/OD_Main.sv:16]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+          NEAR_COLLISION |                               01 |                               10
+            FAR_OBSTACLE |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'sequential' in module 'OD_distance'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:57 ; elapsed = 00:01:17 . Memory (MB): peak = 812.766 ; gain = 556.059
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module OD_Main 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 1     
+Module OD_distance 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+Module OD_Trig_gen 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module OD_ultrasonic 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "u0/trigger_gen/resetCounter" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[22]
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[21]
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[20]
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[19]
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[18]
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[17]
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[16]
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[15]
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[14]
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[13]
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[12]
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[11]
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[10]
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[9]
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[8]
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[7]
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[6]
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[5]
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[4]
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[3]
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[2]
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[1]
+WARNING: [Synth 8-3331] design OD_Main has unconnected port speed[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:19 . Memory (MB): peak = 812.766 ; gain = 556.059
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:18 ; elapsed = 00:01:47 . Memory (MB): peak = 812.766 ; gain = 556.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:01:47 . Memory (MB): peak = 831.852 ; gain = 575.145
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:18 ; elapsed = 00:01:47 . Memory (MB): peak = 831.852 ; gain = 575.145
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop u0/trigger_gen/trigger_signal_reg is being inverted and renamed to u0/trigger_gen/trigger_signal_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:21 ; elapsed = 00:01:50 . Memory (MB): peak = 831.852 ; gain = 575.145
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:21 ; elapsed = 00:01:50 . Memory (MB): peak = 831.852 ; gain = 575.145
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:21 ; elapsed = 00:01:50 . Memory (MB): peak = 831.852 ; gain = 575.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:21 ; elapsed = 00:01:50 . Memory (MB): peak = 831.852 ; gain = 575.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:21 ; elapsed = 00:01:50 . Memory (MB): peak = 831.852 ; gain = 575.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:21 ; elapsed = 00:01:50 . Memory (MB): peak = 831.852 ; gain = 575.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    12|
+|3     |LUT1   |     2|
+|4     |LUT3   |     4|
+|5     |LUT4   |     1|
+|6     |LUT5   |     2|
+|7     |LUT6   |    10|
+|8     |FDCE   |    48|
+|9     |FDRE   |     3|
+|10    |IBUF   |     3|
+|11    |OBUF   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------------+---------------------------+------+
+|      |Instance                   |Module                     |Cells |
++------+---------------------------+---------------------------+------+
+|1     |top                        |                           |    87|
+|2     |  u0                       |OD_ultrasonic              |    78|
+|3     |    counter_echo_pulse     |OD_Counter                 |    34|
+|4     |    trigger_gen            |OD_Trig_gen                |    43|
+|5     |      trigger_signaler_gen |OD_Counter__parameterized0 |    41|
+|6     |  u2                       |OD_distance                |     4|
++------+---------------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:21 ; elapsed = 00:01:50 . Memory (MB): peak = 831.852 ; gain = 575.145
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:46 . Memory (MB): peak = 831.852 ; gain = 172.113
+Synthesis Optimization Complete : Time (s): cpu = 00:01:21 ; elapsed = 00:01:51 . Memory (MB): peak = 831.852 ; gain = 575.145
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:24 ; elapsed = 00:01:55 . Memory (MB): peak = 835.918 ; gain = 592.242
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/College/Graduation Project/GP_COLLISION1/project_GP_sensor/project_GP_sensor.runs/synth_1/OD_Main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file OD_Main_utilization_synth.rpt -pb OD_Main_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.427 . Memory (MB): peak = 835.918 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 27 17:02:49 2024...

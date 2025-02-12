@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Oct 20 21:13:41 2024
+# Process ID: 10048
+# Current directory: D:/College/Graduation Project/GP_COLLISION1/project_MAIN_distance/project_MAIN_distance.runs/impl_1
+# Command line: vivado.exe -log OD_Main.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source OD_Main.tcl -notrace
+# Log file: D:/College/Graduation Project/GP_COLLISION1/project_MAIN_distance/project_MAIN_distance.runs/impl_1/OD_Main.vdi
+# Journal file: D:/College/Graduation Project/GP_COLLISION1/project_MAIN_distance/project_MAIN_distance.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source OD_Main.tcl -notrace
