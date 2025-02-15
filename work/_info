@@ -70,6 +70,7 @@ R3
 R4
 n@_opt1
 R5
+R1
 T_opt2
 !s110 1735058151
 V6:bb18gc0b=MHPUVNG]003
@@ -83,52 +84,52 @@ R5
 R1
 vABS_Controller
 Z6 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z7 !s110 1739649237
+!s110 1739651574
 !i10b 1
-!s100 ;SPlNm<GYzMIZAYN=lKAB1
-Ic2hCM=b?Md3SRRA=@S:3j0
+!s100 KNeH`C2daL78PVTK7aB1;0
+IE:n_mV6iVoWC=DM5PHDH70
 S1
-Z8 dD:/College/Graduation Project/GP_COLLISION1
-w1739645244
-8D:/College/Graduation Project/GP_COLLISION1/ABS.sv
-FD:/College/Graduation Project/GP_COLLISION1/ABS.sv
-!i122 492
-L0 1 68
-Z9 VDg1SIo80bB@j0V0VzS_@n1
-Z10 OL;L;2021.1;73
+Z7 dF:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project
+w1739650196
+8F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/ABS.sv
+FF:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/ABS.sv
+!i122 506
+L0 1 107
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2021.1;73
 r1
 !s85 0
 31
-Z11 !s108 1739649237.000000
-!s107 D:/College/Graduation Project/GP_COLLISION1/ABS.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/ABS.sv|
+!s108 1739651574.000000
+!s107 F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/ABS.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/ABS.sv|
 !i113 0
-Z12 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z10 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R4
 n@a@b@s_@controller
 vABS_Controller_tb
 R6
-R7
+Z11 !s110 1739651575
 !i10b 1
-!s100 k=j`KeL;@g0B;HB:Dk_Pj1
-IbEl_:gLKm?DHNblc:SOFh2
+!s100 Sa=VU`_giFdl@5Ok?WmJc0
+I705^523ONR0@[BX^=ZlDU2
 S1
+R7
+w1739651560
+8F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/ABS_tb.sv
+FF:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/ABS_tb.sv
+!i122 507
+L0 1 70
 R8
-w1739649195
-8D:/College/Graduation Project/GP_COLLISION1/ABS_tb.sv
-FD:/College/Graduation Project/GP_COLLISION1/ABS_tb.sv
-!i122 493
-L0 1 69
 R9
-R10
 r1
 !s85 0
 31
-R11
-!s107 D:/College/Graduation Project/GP_COLLISION1/ABS_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/ABS_tb.sv|
+Z12 !s108 1739651575.000000
+!s107 F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/ABS_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/ABS_tb.sv|
 !i113 0
-R12
+R10
 R4
 n@a@b@s_@controller_tb
 vclkdiv
@@ -138,23 +139,23 @@ Z13 !s110 1730059683
 !s100 AeSMc>RD;E`Q2zn]^NFCj3
 I]1F7]b_zJ5VYcdLoDSlA80
 S1
-R8
-Z14 w1729801241
-Z15 8sensor_trial.sv
-Z16 Fsensor_trial.sv
+Z14 dD:/College/Graduation Project/GP_COLLISION1
+Z15 w1729801241
+Z16 8sensor_trial.sv
+Z17 Fsensor_trial.sv
 !i122 238
 L0 148 18
+R8
 R9
-R10
 r1
 !s85 0
 31
-Z17 !s108 1730059683.000000
-Z18 !s107 sensor_trial.sv|OD_ultrasonic.sv|OD_Trig_gen.sv|OD_Time_tb.sv|OD_Time.sv|OD_Main_tb.sv|OD_Main.sv|OD_Distance_tb.sv|OD_Distance.sv|OD_Counter.sv|
-Z19 !s90 -reportprogress|300|OD_Counter.sv|OD_Distance.sv|OD_Distance_tb.sv|OD_Main.sv|OD_Main_tb.sv|OD_Time.sv|OD_Time_tb.sv|OD_Trig_gen.sv|OD_ultrasonic.sv|sensor_trial.sv|+cover|-covercells|
+Z18 !s108 1730059683.000000
+Z19 !s107 sensor_trial.sv|OD_ultrasonic.sv|OD_Trig_gen.sv|OD_Time_tb.sv|OD_Time.sv|OD_Main_tb.sv|OD_Main.sv|OD_Distance_tb.sv|OD_Distance.sv|OD_Counter.sv|
+Z20 !s90 -reportprogress|300|OD_Counter.sv|OD_Distance.sv|OD_Distance_tb.sv|OD_Main.sv|OD_Main_tb.sv|OD_Time.sv|OD_Time_tb.sv|OD_Trig_gen.sv|OD_ultrasonic.sv|sensor_trial.sv|+cover|-covercells|
 !i113 0
-Z20 !s102 +cover -covercells
-Z21 o+cover -covercells -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z21 !s102 +cover -covercells
+Z22 o+cover -covercells -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R4
 vcounter
 R6
@@ -163,122 +164,122 @@ R13
 !s100 8<jMecB_RgiSoF^_T3bcN2
 IU^9ll]XT[>=44j5^meNMF2
 S1
-R8
 R14
 R15
 R16
+R17
 !i122 238
 L0 167 21
+R8
 R9
-R10
 r1
 !s85 0
 31
-R17
 R18
 R19
-!i113 0
 R20
+!i113 0
 R21
+R22
 R4
 vMain_tb
 R6
-R7
+Z23 !s110 1739651576
 !i10b 1
 !s100 <1<SC5><@JeKFFGn5_EL[1
-Ih;AP[IkPOaOZOS_ICk=k_0
+I0]2A7=0`IQ;J4j;Oo_gJ>2
 S1
-R8
-w1735056949
-8D:/College/Graduation Project/GP_COLLISION1/OD_Main_tb.sv
-FD:/College/Graduation Project/GP_COLLISION1/OD_Main_tb.sv
-!i122 487
+R7
+Z24 w1739638238
+8F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Main_tb.sv
+FF:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Main_tb.sv
+!i122 512
 L0 1 31
+R8
 R9
-R10
 r1
 !s85 0
 31
-Z22 !s108 1739649236.000000
-!s107 D:/College/Graduation Project/GP_COLLISION1/OD_Main_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/OD_Main_tb.sv|
+Z25 !s108 1739651576.000000
+!s107 F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Main_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Main_tb.sv|
 !i113 0
-R12
+R10
 R4
 n@main_tb
 vOD_Counter
 R6
-R7
+R11
 !i10b 1
 !s100 [celBa<HKaoi`FnKA^`Q83
-II7I?Tz1j:e>]mG3AC9I]W0
+I^jZe[^n=O1zGhA:zG;G4J1
 S1
-R8
-w1729803861
-8D:/College/Graduation Project/GP_COLLISION1/OD_Counter.sv
-FD:/College/Graduation Project/GP_COLLISION1/OD_Counter.sv
-!i122 488
+R7
+R24
+8F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Counter.sv
+FF:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Counter.sv
+!i122 508
 L0 1 21
+R8
 R9
-R10
 r1
 !s85 0
 31
-R11
-!s107 D:/College/Graduation Project/GP_COLLISION1/OD_Counter.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/OD_Counter.sv|
-!i113 0
 R12
+!s107 F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Counter.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Counter.sv|
+!i113 0
+R10
 R4
 n@o@d_@counter
 vOD_distance
 R6
-Z23 !s110 1739649236
+R11
 !i10b 1
 !s100 lHG@ed6CLYk@QBMc0P6=01
-IBOhm73n;?Sg5TH:>G2?3:0
+IE^14dB3IY8]aebQeoMnWR3
 S1
-R8
-w1735056912
-8D:/College/Graduation Project/GP_COLLISION1/OD_Distance.sv
-FD:/College/Graduation Project/GP_COLLISION1/OD_Distance.sv
-!i122 483
+R7
+R24
+8F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Distance.sv
+FF:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Distance.sv
+!i122 509
 L0 1 90
+R8
 R9
-R10
 r1
 !s85 0
 31
-R22
-!s107 D:/College/Graduation Project/GP_COLLISION1/OD_Distance.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/OD_Distance.sv|
-!i113 0
 R12
+!s107 F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Distance.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Distance.sv|
+!i113 0
+R10
 R4
 n@o@d_distance
 vOD_Distance_tb
 R6
-R23
+R11
 !i10b 1
 !s100 dJ1CoCij2:BhV=NQ5D:X^0
-IZAzQ[01XbH8^2niHB68^[0
+ImE3;RTH0Zb[XP:BXBe:3[0
 S1
-R8
-w1729447163
-8D:/College/Graduation Project/GP_COLLISION1/OD_Distance_tb.sv
-FD:/College/Graduation Project/GP_COLLISION1/OD_Distance_tb.sv
-!i122 484
+R7
+R24
+8F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Distance_tb.sv
+FF:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Distance_tb.sv
+!i122 510
 L0 1 24
+R8
 R9
-R10
 r1
 !s85 0
 31
-R22
-!s107 D:/College/Graduation Project/GP_COLLISION1/OD_Distance_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/OD_Distance_tb.sv|
-!i113 0
 R12
+!s107 F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Distance_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Distance_tb.sv|
+!i113 0
+R10
 R4
 n@o@d_@distance_tb
 vOD_Main
@@ -286,24 +287,24 @@ R6
 R23
 !i10b 1
 !s100 Q<i8^?zLOBWhfB11aNjCd2
-Ik7zB60@dR<MS2n8J9[V6A1
+I^4cdo@X6m;VNXB=`a:c023
 S1
+R7
+R24
+8F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Main.sv
+FF:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Main.sv
+!i122 511
+Z26 L0 1 28
 R8
-w1735056935
-8D:/College/Graduation Project/GP_COLLISION1/OD_Main.sv
-FD:/College/Graduation Project/GP_COLLISION1/OD_Main.sv
-!i122 486
-Z24 L0 1 28
 R9
-R10
 r1
 !s85 0
 31
-R22
-!s107 D:/College/Graduation Project/GP_COLLISION1/OD_Main.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/OD_Main.sv|
+R25
+!s107 F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Main.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Main.sv|
 !i113 0
-R12
+R10
 R4
 n@o@d_@main
 vOD_time
@@ -311,24 +312,24 @@ R6
 R23
 !i10b 1
 !s100 7G9F^h7gmI1MKYn_ZjFTE1
-I>STU3BnWeiVe88CELR;YG2
+IHbK@1oEf]^N@^Qf]D04TU2
 S1
-R8
-w1735057616
-8D:/College/Graduation Project/GP_COLLISION1/OD_Time.sv
-FD:/College/Graduation Project/GP_COLLISION1/OD_Time.sv
-!i122 482
+R7
+R24
+8F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Time.sv
+FF:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Time.sv
+!i122 513
 L0 1 105
+R8
 R9
-R10
 r1
 !s85 0
 31
-R22
-!s107 D:/College/Graduation Project/GP_COLLISION1/OD_Time.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/OD_Time.sv|
+R25
+!s107 F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Time.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Time.sv|
 !i113 0
-R12
+R10
 R4
 n@o@d_time
 vOD_Time_tb
@@ -336,99 +337,99 @@ R6
 R23
 !i10b 1
 !s100 :nTFoIRdKNc=h7EHF4BdT1
-ILeT7G9DkD5Q5]OHh8>W`M2
+IMJ0LNDL0DW87QgU8Zi3L?3
 S1
-R8
-w1735058120
-8D:/College/Graduation Project/GP_COLLISION1/OD_Time_tb.sv
-FD:/College/Graduation Project/GP_COLLISION1/OD_Time_tb.sv
-!i122 485
+R7
 R24
+8F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Time_tb.sv
+FF:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Time_tb.sv
+!i122 514
+R26
+R8
 R9
-R10
 r1
 !s85 0
 31
-R22
-!s107 D:/College/Graduation Project/GP_COLLISION1/OD_Time_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/OD_Time_tb.sv|
+R25
+!s107 F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Time_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Time_tb.sv|
 !i113 0
-R12
+R10
 R4
 n@o@d_@time_tb
 vOD_Trig_gen
 R6
-R7
+R23
 !i10b 1
 !s100 H;cYF6M@68fkEmcMfk[aM2
-I1Ro@OlM<l]afWm8AT6_OL0
+I:FnQzdnQUPHPWUC;lfJKO2
 S1
-R8
-w1729968863
-Z25 8D:/College/Graduation Project/GP_COLLISION1/OD_Trig_gen.sv
-Z26 FD:/College/Graduation Project/GP_COLLISION1/OD_Trig_gen.sv
-!i122 489
+R7
+R24
+8F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Trig_gen.sv
+FF:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Trig_gen.sv
+!i122 515
 Z27 L0 1 36
+R8
 R9
-R10
 r1
 !s85 0
 31
-R11
-Z28 !s107 D:/College/Graduation Project/GP_COLLISION1/OD_Trig_gen.sv|
-Z29 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/OD_Trig_gen.sv|
+R25
+!s107 F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Trig_gen.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Trig_gen.sv|
 !i113 0
-R12
+R10
 R4
 n@o@d_@trig_gen
 vOD_ultrasonic
 R6
-R7
+Z28 !s110 1739651577
 !i10b 1
 !s100 ZE_;EVZCPmXOi;BnQm>PE1
-IdbCWgQz^]NJ]c<L9LWHn?0
+Ie6JZYPd?e`G7TdnL5>_Xb0
 S1
-R8
-w1729969287
-8D:/College/Graduation Project/GP_COLLISION1/OD_ultrasonic.sv
-FD:/College/Graduation Project/GP_COLLISION1/OD_ultrasonic.sv
-!i122 490
+R7
+R24
+8F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_ultrasonic.sv
+FF:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_ultrasonic.sv
+!i122 516
 L0 1 35
+R8
 R9
-R10
 r1
 !s85 0
 31
-R11
-!s107 D:/College/Graduation Project/GP_COLLISION1/OD_ultrasonic.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/OD_ultrasonic.sv|
+Z29 !s108 1739651577.000000
+!s107 F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_ultrasonic.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_ultrasonic.sv|
 !i113 0
-R12
+R10
 R4
 n@o@d_ultrasonic
 vOD_ultrasonic_tb
 R6
-R7
+R28
 !i10b 1
 !s100 WKW0_JC25ooGjO>mC49dh2
-IU837f;:Q_dUnQC^CBme?W1
+Ilo93jCKKO8zL2j8;<8`4M1
 S1
-R8
-w1730061299
-8D:/College/Graduation Project/GP_COLLISION1/Ultrasonic_sensor.sv
-FD:/College/Graduation Project/GP_COLLISION1/Ultrasonic_sensor.sv
-!i122 491
+R7
+w1739638239
+8F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/Ultrasonic_sensor.sv
+FF:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/Ultrasonic_sensor.sv
+!i122 517
 L0 1 40
+R8
 R9
-R10
 r1
 !s85 0
 31
-R11
-!s107 D:/College/Graduation Project/GP_COLLISION1/Ultrasonic_sensor.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/Ultrasonic_sensor.sv|
+R29
+!s107 F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/Ultrasonic_sensor.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/Ultrasonic_sensor.sv|
 !i113 0
-R12
+R10
 R4
 n@o@d_ultrasonic_tb
 vpwm
@@ -438,23 +439,23 @@ R13
 !s100 J[2HI=4KQhCATYJ=7DZl21
 IQbm=2755KASDSc6351Gm>2
 S1
-R8
 R14
 R15
 R16
+R17
 !i122 238
 L0 105 43
+R8
 R9
-R10
 r1
 !s85 0
 31
-R17
 R18
 R19
-!i113 0
 R20
+!i113 0
 R21
+R22
 R4
 vthree_ultrasonic
 R6
@@ -463,23 +464,23 @@ R13
 !s100 3YhcjW:=dKA;GS:ZVjbzY1
 I6D^a88eY4A@fh5_fTH^5B0
 S1
-R8
 R14
 R15
 R16
+R17
 !i122 238
 L0 37 30
+R8
 R9
-R10
 r1
 !s85 0
 31
-R17
 R18
 R19
-!i113 0
 R20
+!i113 0
 R21
+R22
 R4
 vtrigger_generator
 R6
@@ -488,23 +489,23 @@ R13
 !s100 4NO^T03Wl;[Bi4n?2Ro_?1
 IO45EcESDc5_`N=kN`<[IW3
 S1
-R8
 R14
 R15
 R16
+R17
 !i122 238
 L0 69 36
+R8
 R9
-R10
 r1
 !s85 0
 31
-R17
 R18
 R19
-!i113 0
 R20
+!i113 0
 R21
+R22
 R4
 vtrigger_signaler_generator
 R6
@@ -513,22 +514,22 @@ R6
 !s100 GH]^8ibF<5;`zCY[`M2do2
 ICK5G_@=6Z3M63`P7i<>`31
 S1
-R8
+R14
 w1729803495
-R25
-R26
+8D:/College/Graduation Project/GP_COLLISION1/OD_Trig_gen.sv
+FD:/College/Graduation Project/GP_COLLISION1/OD_Trig_gen.sv
 !i122 148
 R27
+R8
 R9
-R10
 r1
 !s85 0
 31
 !s108 1729803507.000000
-R28
-R29
+!s107 D:/College/Graduation Project/GP_COLLISION1/OD_Trig_gen.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/OD_Trig_gen.sv|
 !i113 0
-R12
+R10
 R4
 vultrasonic
 R6
@@ -537,21 +538,21 @@ R13
 !s100 <EazIiH0C[HlaM_eNbbJY1
 I]a>bI56_^oNMmlz5>MGBh2
 S1
-R8
 R14
 R15
 R16
+R17
 !i122 238
 R27
+R8
 R9
-R10
 r1
 !s85 0
 31
-R17
 R18
 R19
-!i113 0
 R20
+!i113 0
 R21
+R22
 R4
