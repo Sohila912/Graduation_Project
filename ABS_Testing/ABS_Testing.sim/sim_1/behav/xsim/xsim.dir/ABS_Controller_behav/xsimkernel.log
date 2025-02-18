@@ -1,0 +1,4 @@
+Running: xsim.dir/ABS_Controller_behav/xsimk.exe -simmode gui -wdb ABS_Controller_behav.wdb -simrunnum 0 -socket 55101
+Design successfully loaded
+Design Loading Memory Usage: 7320 KB (Peak: 7320 KB)
+Design Loading CPU Usage: 0 ms

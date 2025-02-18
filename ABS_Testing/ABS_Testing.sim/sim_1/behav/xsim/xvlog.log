@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Mariam Tamer/OneDrive/Desktop/GP/GP_Collision/GP_Collision/Graduation_Project/ABS.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ABS_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Mariam Tamer/OneDrive/Desktop/GP/GP_Collision/GP_Collision/Graduation_Project/ABS_Testing/ABS_Testing.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

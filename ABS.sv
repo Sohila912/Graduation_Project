@@ -38,7 +38,7 @@ always @(*) begin
     case (cs)
 
         IDLE: 
-            if(brake_pedal)
+            if(brake_pedal && !Object_detected)
                 ns = BRAKE;
             else if (Object_detected)
                 ns = LOCK;
@@ -65,43 +65,50 @@ end
 // Output logic
 assign brake_signal = ((cs == BRAKE || cs == LOCK) && !rst) ? 1'b1 : (rst)? 1'b0 : 1'b0;
 
-// // --- Assertions ---
-//   // Assertion 1: When no braking inputs are present, brake_signal should be 0.
-//   property no_brake_when_idle;
-//     @(posedge clk) disable iff (rst)
-//       (!brake_pedal && !Object_detected) |-> (brake_signal == 1'b0);
-//   endproperty
+// --- Assertions ---
+  // Assertion 1: When no braking inputs are present, brake_signal should be 0.
+  property IDLE_a;
+    @(posedge clk) disable iff (rst)
+        (!brake_pedal && !Object_detected) |-> (ns == IDLE);
+  endproperty
 
-//   // Assertion 2: When the brake pedal is pressed (and no object detected), brake_signal should be 1.
-//   property brake_pedal_asserted;
-//     @(posedge clk) disable iff (rst)
-//       (brake_pedal && !Object_detected) |-> (brake_signal == 1'b1);
-//   endproperty
+  property BRAKE_a;
+    @(posedge clk) disable iff (rst)
+        (brake_pedal && ~ Object_detected && cs!=LOCK && wheel_speed > SPEED_THRESHOLD) |-> (ns == BRAKE);
+  endproperty
 
-//   // Assertion 3: When an object is detected, brake_signal must be asserted.
-//   property object_detected_implies_brake;
-//     @(posedge clk) disable iff (rst)
-//       (Object_detected) |-> (brake_signal == 1'b1);
-//   endproperty
+  property LOCK_a;
+    @(posedge clk) disable iff (rst)
+        (!brake_pedal && Object_detected) |-> (ns == LOCK);
+  endproperty
 
-//   // Assertion 4: After inputs are cleared, eventually brake_signal goes low.
-//   property eventually_idle;
-//     @(posedge clk) disable iff (rst)
-//       ((!brake_pedal && !Object_detected) throughout [*2]) |-> (brake_signal == 1'b0);
-//   endproperty
+ always_comb begin
+    if(rst) begin
+        state_rst_a:assert final(cs==IDLE);
+        state_rst_c:cover final(cs==IDLE);
+        output_rst_a:assert final(!brake_signal);
+        output_rst_c:cover final(!brake_signal);
+    end
+    else begin
+        if (auto_brake && (cs == LOCK || cs == BRAKE)) begin
+            brake_a:assert final(brake_signal);
+            brake_c:cover final(brake_signal);
+        end
+        else if (cs==IDLE) begin
+            No_brake_a:assert final(!brake_signal);
+            No_brake_c:cover final(!brake_signal);
+        end
 
-//   // Attach the assertions
-//   assert property (no_brake_when_idle);
-//   cover property (no_brake_when_idle);
+    end
+ end
 
-//   assert property (brake_pedal_asserted);
-//   cover property (brake_pedal_asserted);
-
-//   assert property (object_detected_implies_brake);
-//     cover property (object_detected_implies_brake);
-
-//   assert property (eventually_idle);
-//     cover property (eventually_idle);
+  // Attach the assertions
+  assert property (IDLE_a);
+  cover property (IDLE_a);
+  assert property (BRAKE_a);
+  cover property (BRAKE_a);
+  assert property (LOCK_a);
+  cover property (LOCK_a);
     
 
 endmodule

@@ -18,15 +18,16 @@ endproperty
 property distance_a2;
     @(posedge clk) disable iff (rst) (distance <= 3'b100 && !time_out |-> ns == NEAR_COLLISION);
 endproperty
-property output_a;
-    @(posedge clk) disable iff (rst) (cs==NEAR_COLLISION |-> Object_detected);
-endproperty
 always_comb begin
     if(rst) begin
         state_rst_a:assert final(cs==IDLE);
-        state_rst_c:cover(cs==IDLE);
+        state_rst_c:cover final(cs==IDLE);
         output_rst_a:assert final(!Object_detected);
-        output_rst_c:cover(!Object_detected);
+        output_rst_c:cover final(!Object_detected);
+    end
+    else if (cs==NEAR_COLLISION) begin
+        output_a:assert final (Object_detected);
+        output_c:cover final (Object_detected);
     end
 end
 assert property (timeout_a);
@@ -35,8 +36,6 @@ assert property (distance_a);
 cover property (distance_a);
 assert property (distance_a2);
 cover property (distance_a2);
-assert property (output_a);
-cover property (output_a);
 
 
 //state memory 
