@@ -1,11 +1,4 @@
-{F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/ABS.sv} {1 {vlog -work work -vopt -sv -stats=none {F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/ABS.sv}
-QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
--- Compiling module ABS_Controller
-
-Top level modules:
-	ABS_Controller
-
-} {} {}} {F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_ultrasonic.sv} {1 {vlog -work work -vopt -sv -stats=none {F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_ultrasonic.sv}
+{F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_ultrasonic.sv} {1 {vlog -work work -vopt -sv -stats=none {F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_ultrasonic.sv}
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 -- Compiling module OD_ultrasonic
 
@@ -32,13 +25,6 @@ QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 
 Top level modules:
 	Main_tb
-
-} {} {}} {F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Distance.sv} {1 {vlog -work work -vopt -sv -stats=none {F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Distance.sv}
-QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
--- Compiling module OD_distance
-
-Top level modules:
-	OD_distance
 
 } {} {}} {F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Time_tb.sv} {1 {vlog -work work -vopt -sv -stats=none {F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/OD_Time_tb.sv}
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
