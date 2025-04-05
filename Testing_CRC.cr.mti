@@ -1,0 +1,22 @@
+{F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/CAN.sv} {1 {vlog -work work -vopt -sv -stats=none {F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/CAN.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module CAN
+
+Top level modules:
+	CAN
+
+} {} {}} {F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/CRC_Enable_gen.sv} {1 {vlog -work work -vopt -sv -stats=none {F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/CRC_Enable_gen.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module CRC_Enable_gen
+
+Top level modules:
+	CRC_Enable_gen
+
+} {} {}} {F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/CRC.sv} {1 {vlog -work work -vopt -sv -stats=none {F:/Senior 2 Year CCEE/Semester 1/GP/Github_File/Graduation_Project/CRC.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module CRC
+
+Top level modules:
+	CRC
+
+} {} {}}
