@@ -1,21 +1,36 @@
 module CRC (
-    input [7:0] d,        // 8-bit data input
-    input [14:0] c,       // Current CRC value
-    output [14:0] next    // Next CRC value
+    input wire clk,                // Clock input
+    input wire rst,                // Reset input
+    input wire [7:0] data_in,      // 8-bit data input (one byte at a time)
+    output reg [14:0] crc_out      // 15-bit CRC output
 );
-    assign next[0]  = d[0] ^ c[14];
-    assign next[1]  = d[1] ^ c[0];
-    assign next[2]  = d[2] ^ c[1];
-    assign next[3]  = d[3] ^ c[2] ^ c[14];
-    assign next[4]  = d[4] ^ c[3] ^ c[13];
-    assign next[5]  = d[5] ^ c[4] ^ c[12];
-    assign next[6]  = d[6] ^ c[5];
-    assign next[7]  = d[7] ^ c[6];
-    assign next[8]  = c[7];
-    assign next[9]  = c[8];
-    assign next[10] = c[9] ^ c[14];
-    assign next[11] = c[10];
-    assign next[12] = c[11] ^ c[14];
-    assign next[13] = c[12] ^ c[14];
-    assign next[14] = c[13] ^ c[14];
+
+    // Polynomial: 0x4599 (CRC-15 CAN)
+    localparam POLYNOMIAL = 15'h4599;
+    localparam WIDTH = 15; // CRC width
+
+    // Internal register to hold CRC value
+    reg [WIDTH-1:0] crc_reg;
+
+    // Shift register and XOR operation for CRC calculation
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            crc_reg <= {WIDTH{1'b1}};  // Initialize CRC to all 1's
+        end else begin
+            // Shift-in the incoming data and XOR with polynomial
+            crc_reg[WIDTH-1:8] <= crc_reg[WIDTH-1:8]; // Shift left
+            crc_reg[7:0] <= crc_reg[7:0] ^ data_in;  // XOR with incoming data
+
+            // Apply polynomial division by checking the MSB
+            if (crc_reg[WIDTH-1]) begin
+                crc_reg <= (crc_reg << 1) ^ POLYNOMIAL;  // Shift and XOR with polynomial
+            end else begin
+                crc_reg <= crc_reg << 1;  // Just shift if no XOR needed
+            end
+        end
+    end
+
+    // Output the CRC value
+    assign crc_out = crc_reg;
+
 endmodule

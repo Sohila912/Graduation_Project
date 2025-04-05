@@ -2,3 +2,6 @@ Running: xsim.dir/ABS_Controller_behav/xsimk.exe -simmode gui -wdb ABS_Controlle
 Design successfully loaded
 Design Loading Memory Usage: 7320 KB (Peak: 7320 KB)
 Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 7920 KB (Peak: 7920 KB)
+Simulation CPU Usage: 0 ms

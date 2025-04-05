@@ -1,22 +1,30 @@
-// CAN Controller Partial Module with Integrated CRC Trigger Logic
+// CAN Controller
 
 module CAN(
     input wire clk,
     input wire rst,
-    input wire [7:0] data,         // Example: total data for CRC (can be longer)
-    input wire start_frame,          // Trigger to send a frame
+    input Identifier,               //ID 0 for higher priority 
+    input RTR,                      // remote transmission request, 0 for data frame, 1 for remote frame request
+    input IDE,                      // identifier extension bit, 0 for standard frame, 1 for extended frame
+    input reserved_bit,             //for future use
+    input [3:0] DLC,                // data length code, maximum 8 bytes in one frame
+    input ACK_slot,                 //receiver sends dominant bit (0) as an ack                                                         
+    input wire [7:0] data,          // Example: total data for CRC (can be longer)
     output wire [14:0] CRC_out      // 15-bit CRC output
 );
 
     // Internal registers
-    reg [5:0] bit_counter;          // Tracks how many bits have been sent
     reg prev_crc_condition;
     wire pulse_start_crc;
     wire enable_crc;
+    reg CRC_delimiter = 1'b1;             // 1 to confirm crc calculation           
+    reg ACK_delimiter = 1'b1;             // 1 to sperate the frame parts
+    reg [6:0] end_frame = 7'b1111111;
+    reg [2:0] IFS = 3'b000;                 //interframe spacing
+    reg start_frame = 1'b1;         // Trigger to send a frame
 
     // CRC condition: when we're done sending the data field (example range 0–63)
-    wire crc_condition = (bit_counter == 4'b1000) && start_frame;
-
+    wire crc_condition = start_frame;
     // Rising edge detection to generate 1-cycle pulse for CRC start
     always @(posedge clk or posedge rst) begin
         if (rst)
@@ -29,37 +37,28 @@ module CAN(
 
     // Instantiate CRC_Enable_gen module
     CRC_Enable_gen crc_EN (
-        .pulse(pulse_start_crc),
+        .pulse_start_crc(pulse_start_crc),
         .clk(clk),
         .rst(rst),
-        .out(enable_crc)
+        .enable_crc(enable_crc)
     );
 
     // Instantiate parallel CRC module (CRC-15 polynomial used in CAN)
-    wire [14:0] crc_next;
-    reg [14:0] crc_reg;
-
-    CRC crc_calc (
-        .c(crc_reg),
-        .d(data),  // Example: calculating CRC on 8 bits at a time
-        .next(crc_next)
-    );
-
-    always_ff @(posedge clk or posedge rst) begin
-        if (rst)
-            crc_reg <= 15'd0;
-        else if (enable_crc)
-            crc_reg <= crc_next;
+    wire [14:0] crc_result;
+    always_comb begin 
+        if (enable_crc) begin
+            CRC crc_calc (
+                .clk(clk),
+                .rst(rst),
+                .data_in(data),
+                .crc_out(crc_result)
+            );
+        end
     end
+    
 
-    assign crc_out = crc_reg;
 
-    // Simulated bit counter (e.g., for serialization)
-    always_ff @(posedge clk or posedge rst) begin
-        if (rst)
-            bit_counter <= 0;
-        else if (start_frame && bit_counter < 6'd63)
-            bit_counter <= bit_counter + 1;
-    end
+    assign CRC_out = crc_result;
+
 
 endmodule
