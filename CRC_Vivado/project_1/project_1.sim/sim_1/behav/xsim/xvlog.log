@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/College/Graduation Project/GP_COLLISION1/CRC_Vivado/project_1/CRC.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRC_synthesizable
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/College/Graduation Project/GP_COLLISION1/CRC_Vivado/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

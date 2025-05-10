@@ -1,0 +1,386 @@
+m255
+K4
+z2
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/QuestaFolder/examples
+vABS_Controller
+Z0 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z1 !s110 1746031153
+!i10b 1
+!s100 cR`;W8;KVM__eOz^hBe=o2
+Iz:o>BUIWP`g?SL9l2daoB2
+S1
+Z2 dD:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update
+Z3 w1739899403
+8D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/ABS.sv
+FD:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/ABS.sv
+!i122 0
+L0 1 114
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z6 !s108 1746031153.000000
+!s107 D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/ABS.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/ABS.sv|
+!i113 0
+Z7 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
+n@a@b@s_@controller
+vABS_Controller_tb
+R0
+R1
+!i10b 1
+!s100 S3ij;:1=iQniMFU;J@anC0
+Ii;z6fQWiDY:TI80Tne>071
+S1
+R2
+R3
+8D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/ABS_tb.sv
+FD:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/ABS_tb.sv
+!i122 1
+L0 1 46
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/ABS_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/ABS_tb.sv|
+!i113 0
+R7
+R8
+n@a@b@s_@controller_tb
+vCAN_tb
+R0
+R1
+!i10b 1
+!s100 :QkMO4P?W_<9G8m3DBgS[1
+IAkZTdg;C;n^V3[Pb@MDnJ1
+S1
+R2
+Z9 w1746030138
+8D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/CAN_tb.sv
+FD:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/CAN_tb.sv
+!i122 2
+L0 1 60
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/CAN_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/CAN_tb.sv|
+!i113 0
+R7
+R8
+n@c@a@n_tb
+vCRC
+R0
+Z10 !s110 1746031154
+!i10b 1
+!s100 b@Yn2W4inDaQMYZ[2LVGF1
+I^Shhdhk<:g9`1]Ag1aR_H2
+S1
+R2
+R9
+8D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/CRC.sv
+FD:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/CRC.sv
+!i122 3
+Z11 L0 1 36
+R4
+R5
+r1
+!s85 0
+31
+Z12 !s108 1746031154.000000
+!s107 D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/CRC.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/CRC.sv|
+!i113 0
+R7
+R8
+n@c@r@c
+vCRC_Enable_gen
+R0
+R10
+!i10b 1
+!s100 4Aa]ThYE7ICj1]AB_Bz>90
+I[DV7JGaYmJ]FI:_01ln`[1
+S1
+R2
+R9
+8D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/CRC_Enable_gen.sv
+FD:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/CRC_Enable_gen.sv
+!i122 4
+L0 1 34
+R4
+R5
+r1
+!s85 0
+31
+R12
+!s107 D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/CRC_Enable_gen.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/CRC_Enable_gen.sv|
+!i113 0
+R7
+R8
+n@c@r@c_@enable_gen
+vMain_tb
+R0
+Z13 !s110 1746031155
+!i10b 1
+!s100 <1<SC5><@JeKFFGn5_EL[1
+IMiZ^ZAWT@Gz<Yc_:PUHCh1
+S1
+R2
+R3
+8D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Main_tb.sv
+FD:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Main_tb.sv
+!i122 9
+L0 1 31
+R4
+R5
+r1
+!s85 0
+31
+Z14 !s108 1746031155.000000
+!s107 D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Main_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Main_tb.sv|
+!i113 0
+R7
+R8
+n@main_tb
+vOD_Counter
+R0
+R10
+!i10b 1
+!s100 [celBa<HKaoi`FnKA^`Q83
+Ijn?XS:S61E5E31Wm@;4Q:0
+S1
+R2
+R3
+8D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Counter.sv
+FD:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Counter.sv
+!i122 5
+L0 1 21
+R4
+R5
+r1
+!s85 0
+31
+R12
+!s107 D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Counter.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Counter.sv|
+!i113 0
+R7
+R8
+n@o@d_@counter
+vOD_distance
+R0
+R10
+!i10b 1
+!s100 8@_:46?[558k7LP>NS77l3
+I[5>>ccQQMXCVT09If4M^G0
+S1
+R2
+R3
+8D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Distance.sv
+FD:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Distance.sv
+!i122 6
+L0 1 89
+R4
+R5
+r1
+!s85 0
+31
+R12
+!s107 D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Distance.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Distance.sv|
+!i113 0
+R7
+R8
+n@o@d_distance
+vOD_Distance_tb
+R0
+R10
+!i10b 1
+!s100 dJ1CoCij2:BhV=NQ5D:X^0
+I<c[Xkd]C0>Ja8Mo^C@<Mg0
+S1
+R2
+R3
+8D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Distance_tb.sv
+FD:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Distance_tb.sv
+!i122 7
+L0 1 24
+R4
+R5
+r1
+!s85 0
+31
+R12
+!s107 D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Distance_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Distance_tb.sv|
+!i113 0
+R7
+R8
+n@o@d_@distance_tb
+vOD_Main
+R0
+R10
+!i10b 1
+!s100 Q<i8^?zLOBWhfB11aNjCd2
+IRLI2R=@IMam2MMQ>Id[c>0
+S1
+R2
+R3
+8D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Main.sv
+FD:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Main.sv
+!i122 8
+Z15 L0 1 28
+R4
+R5
+r1
+!s85 0
+31
+R12
+!s107 D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Main.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Main.sv|
+!i113 0
+R7
+R8
+n@o@d_@main
+vOD_time
+R0
+R13
+!i10b 1
+!s100 FihK<T3E_6YaC^X3F`2662
+I[9oRd@FXWR9VV_k5N>US53
+S1
+R2
+w1746030859
+8D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Time.sv
+FD:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Time.sv
+!i122 10
+L0 1 107
+R4
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Time.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Time.sv|
+!i113 0
+R7
+R8
+n@o@d_time
+vOD_Time_tb
+R0
+R13
+!i10b 1
+!s100 :nTFoIRdKNc=h7EHF4BdT1
+I]5Ee4nZ;;=2:cI4AUETTA1
+S1
+R2
+R3
+8D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Time_tb.sv
+FD:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Time_tb.sv
+!i122 11
+R15
+R4
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Time_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Time_tb.sv|
+!i113 0
+R7
+R8
+n@o@d_@time_tb
+vOD_Trig_gen
+R0
+R13
+!i10b 1
+!s100 H;cYF6M@68fkEmcMfk[aM2
+I`jS`XAT4^EcKFjJ^^9JYU0
+S1
+R2
+R3
+8D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Trig_gen.sv
+FD:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Trig_gen.sv
+!i122 12
+R11
+R4
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Trig_gen.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_Trig_gen.sv|
+!i113 0
+R7
+R8
+n@o@d_@trig_gen
+vOD_ultrasonic
+R0
+R13
+!i10b 1
+!s100 ZE_;EVZCPmXOi;BnQm>PE1
+I;hIWD9SemlTZPA1lOlgi^1
+S1
+R2
+R3
+8D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_ultrasonic.sv
+FD:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_ultrasonic.sv
+!i122 13
+L0 1 35
+R4
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_ultrasonic.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/OD_ultrasonic.sv|
+!i113 0
+R7
+R8
+n@o@d_ultrasonic
+vOD_ultrasonic_tb
+R0
+R13
+!i10b 1
+!s100 WKW0_JC25ooGjO>mC49dh2
+IOM>>jFFD0^_oCD1[KLObj1
+S1
+R2
+R3
+8D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/Ultrasonic_sensor.sv
+FD:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/Ultrasonic_sensor.sv
+!i122 14
+L0 1 40
+R4
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/Ultrasonic_sensor.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/CAN_Update/Ultrasonic_sensor.sv|
+!i113 0
+R7
+R8
+n@o@d_ultrasonic_tb
