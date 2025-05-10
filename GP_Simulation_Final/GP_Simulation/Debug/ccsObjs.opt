@@ -1,0 +1,9 @@
+"./main.obj"
+"./tm4c123gh6pm_startup_ccs.obj"
+"./Buttons_and_LEDS/Buttons_and_LEDS.obj"
+"./DC_Motors/DC_motors.obj"
+"./Systick_Timer/Systick_Timer.obj"
+"./UART/UART.obj"
+"./Ultrasonic/Ulrasonic.obj"
+"../tm4c123gh6pm.cmd"
+-llibc.a
