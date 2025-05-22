@@ -1,10 +1,10 @@
 module ABS_Controller (clk,rst,brake_pedal,Object_detected,wheel_speed,brake_signal);
-    input           clk;               // System clock
-    input           rst;             // Reset signal (active high)
+    input           clk;                 // System clock
+    input           rst;                // Reset signal (active high)
     input           brake_pedal;       // Manual brake input
-    input           Object_detected; // Obstacle detection signal
-    input   [7:0]   wheel_speed;       // Current wheel speed
-    output          brake_signal;       // Signal to the brake actuator
+    input           Object_detected;  // Obstacle detection signal
+    input   [7:0]   wheel_speed;     // Current wheel speed
+    output          brake_signal;   // Signal to the brake actuator
 
 
 // Parameter for lock detection threshold
