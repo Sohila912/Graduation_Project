@@ -1,10 +1,44 @@
-module ABS_Controller (clk,rst,brake_pedal,Object_detected,wheel_speed,brake_signal);
+module ABS_Controller (clk,rst,brake_pedal,CAN_frame,brake_signal,ACK_slot);
     input           clk;                 // System clock
     input           rst;                // Reset signal (active high)
     input           brake_pedal;       // Manual brake input
-    input           Object_detected;  // Obstacle detection signal
-    input   [7:0]   wheel_speed;     // Current wheel speed
-    output          brake_signal;   // Signal to the brake actuator
+    input  [43:0]   CAN_frame;         // Current wheel speed
+    output          brake_signal;      // Signal to the brake actuator
+    output logic    ACK_slot; 
+
+    logic          Object_detected;  // Obstacle detection signal
+    logic [6:0]    wheel_speed;     // Current wheel speed
+
+    logic [21:0] received_crc, computed_crc;
+    logic        crc_done;
+
+    // Extract data from CAN frame
+    assign Object_detected = CAN_frame[27];
+    assign wheel_speed     = CAN_frame[34:28];
+    assign received_crc = CAN_frame[34:13];       // CRC from CAN frame
+
+    logic [7:0] data_for_crc;
+    assign data_for_crc = {wheel_speed, Object_detected};
+
+    // CRC checker
+    CRC_synthesizable crc_check (
+        .clk(clk),
+        .rst(rst),
+        .start(1'b1),                 // always check when new frame comes
+        .data_in(data_for_crc),
+        .done(crc_done),
+        .data_out(computed_crc)
+    );
+
+    
+    //ACK logic
+    always_comb begin
+        if (crc_done && (computed_crc == received_crc)) begin
+            ACK_slot   = 1'b0;
+        end else begin
+            ACK_slot   = 1'b1;
+        end
+    end
 
 
 // Parameter for lock detection threshold

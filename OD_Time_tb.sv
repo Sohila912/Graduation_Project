@@ -2,7 +2,7 @@ module OD_Time_tb ();
     bit clk;
     // logic [2:0] distance;  //Highest distance is 4 meters
     // logic [7:0] speed;     //Highest speed is 255 km/hr
-    logic [22:0] time_taken;
+    logic [6:0] time_taken;
     logic rst,time_out,Object_detected;
     initial begin
         clk = 0;
