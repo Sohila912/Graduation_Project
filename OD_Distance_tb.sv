@@ -1,6 +1,6 @@
 module OD_Distance_tb ();
     bit clk;
-    logic [6:0] distance;  //Highest distance is 4 meters
+    logic [6:0] distance;  //Critical distance is 4 meters
     logic rst,time_out,Object_detected;
     initial begin
         clk = 0;

@@ -37,20 +37,24 @@ module Top_tb();
 
         // === Fixed test cases ===
         $display("Running fixed test cases...");
-        apply_test(7'd60, 7'd50, 0, 0); // Normal driving
-        apply_test(7'd60, 7'd5,  0, 0); // Obstacle close
-        apply_test(7'd20, 7'd5,  1, 0); // Driver brakes
-        apply_test(7'd20, 7'd5,  1, 1); // Timeout
-        apply_test(7'd20, 7'd60, 0, 0); // Obstacle cleared
+        apply_test(7'd60, 7'd50, 0, 0,0); // Normal driving
+        apply_test(7'd60, 7'd5,  0, 0,0); // Obstacle close
+        apply_test(7'd20, 7'd5,  1, 0,0); // Driver brakes
+        apply_test(7'd20, 7'd5,  1, 1,0); // Timeout
+        apply_test(7'd20, 7'd60, 0, 0,0); // Obstacle cleared
+
+        // Reset the DUT
+        reset_assert();
 
         // === Randomized test cases ===
         $display("Running randomized test cases...");
         repeat (1000) begin
+            rst = ($urandom_range(0, 9) == 0); // 10% chance it's 1, 90% it's 0
             car_speed = $urandom_range(0, 7'd100);  // Car speed [0–100]
             distance  = $urandom_range(0, 7'd100);  // Distance [0–100]
             brake_pedal = ($urandom_range(0, 9) == 0); // 10% chance it's 1, 90% it's 0
             time_out = $urandom_range(0, 1);
-            apply_test(car_speed, distance, brake_pedal, time_out);
+            apply_test(car_speed, distance, brake_pedal, time_out, rst);
         end
 
         $display("Simulation complete.");
@@ -63,16 +67,19 @@ module Top_tb();
         input logic [6:0] speed,
         input logic [6:0] dist_Applytest,
         input logic pedal,
-        input logic timeout
+        input logic timeout,
+        input logic rst_apply_test
     );
         car_speed = speed;
         distance = dist_Applytest;
         brake_pedal = pedal;
         time_out = timeout;
+        rst = rst_apply_test;
 
         repeat (15) @(posedge clk);
-        GoldenModel(brake_pedal, time_out, car_speed, distance, rst);
+        GoldenModel(pedal, timeout, speed, dist_Applytest, rst_apply_test);
     endtask
+
 
     // Golden model reference checker
     task GoldenModel (
@@ -87,8 +94,13 @@ module Top_tb();
 
         time_taken_GM = (car_speed == 0 || rst || time_out) ? 7'b1111111 :
                         (distance * 36) / (car_speed * 10);
-
-        if (brake_pedal || (time_taken_GM <= 7'd3 && !time_out))
+        if(rst )
+            brake_signal_GM = 0;
+        else if (brake_pedal)
+            brake_signal_GM = 1;
+        else if (time_out)
+            brake_signal_GM = 0;
+        else if (time_taken_GM <= 7'd3)
             brake_signal_GM = 1;
         else
             brake_signal_GM = 0;
