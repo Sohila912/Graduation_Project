@@ -1,0 +1,331 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed May 28 23:09:40 2025
+# Process ID: 21436
+# Current directory: D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/OD_main/OD_main.runs/synth_1
+# Command line: vivado.exe -log OD_Main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source OD_Main.tcl
+# Log file: D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/OD_main/OD_main.runs/synth_1/OD_Main.vds
+# Journal file: D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/OD_main/OD_main.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source OD_Main.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 304.766 ; gain = 73.309
+Command: synth_design -top OD_Main -part xc7a200tffg1156-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18972 
+WARNING: [Synth 8-2802] unexpected final, violates IEEE 1800 syntax [D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/OD_Distance.sv:26]
+WARNING: [Synth 8-2802] unexpected final, violates IEEE 1800 syntax [D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/OD_Distance.sv:27]
+WARNING: [Synth 8-2802] unexpected final, violates IEEE 1800 syntax [D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/OD_Distance.sv:28]
+WARNING: [Synth 8-2802] unexpected final, violates IEEE 1800 syntax [D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/OD_Distance.sv:29]
+WARNING: [Synth 8-2802] unexpected final, violates IEEE 1800 syntax [D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/OD_Distance.sv:32]
+WARNING: [Synth 8-2802] unexpected final, violates IEEE 1800 syntax [D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/OD_Distance.sv:33]
+WARNING: [Synth 8-2802] unexpected final, violates IEEE 1800 syntax [D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/OD_Time.sv:31]
+WARNING: [Synth 8-2802] unexpected final, violates IEEE 1800 syntax [D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/OD_Time.sv:33]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 425.652 ; gain = 108.238
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'OD_Main' [D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/OD_Main.sv:1]
+	Parameter SAFE_DIST_TIME bound to: TIME - type: string 
+INFO: [Synth 8-6157] synthesizing module 'OD_time' [D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/OD_Time.sv:1]
+WARNING: [Synth 8-2898] ignoring assertion [D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/OD_Time.sv:31]
+WARNING: [Synth 8-2898] ignoring assertion [D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/OD_Time.sv:32]
+WARNING: [Synth 8-2898] ignoring assertion [D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/OD_Time.sv:33]
+WARNING: [Synth 8-2898] ignoring assertion [D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/OD_Time.sv:34]
+INFO: [Synth 8-6155] done synthesizing module 'OD_time' (1#1) [D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/OD_Time.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'OD_Main' (2#1) [D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/OD_Main.sv:1]
+WARNING: [Synth 8-3917] design OD_Main has port Identifier driven by constant 0
+WARNING: [Synth 8-3917] design OD_Main has port IDE driven by constant 0
+WARNING: [Synth 8-3917] design OD_Main has port reserved_bit driven by constant 0
+WARNING: [Synth 8-3917] design OD_Main has port data[15] driven by constant 0
+WARNING: [Synth 8-3917] design OD_Main has port data[14] driven by constant 0
+WARNING: [Synth 8-3917] design OD_Main has port data[13] driven by constant 0
+WARNING: [Synth 8-3917] design OD_Main has port data[12] driven by constant 0
+WARNING: [Synth 8-3917] design OD_Main has port data[11] driven by constant 0
+WARNING: [Synth 8-3917] design OD_Main has port data[10] driven by constant 0
+WARNING: [Synth 8-3917] design OD_Main has port data[9] driven by constant 0
+WARNING: [Synth 8-3917] design OD_Main has port data[8] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 458.660 ; gain = 141.246
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 458.660 ; gain = 141.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 458.660 ; gain = 141.246
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tffg1156-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/Constraints_basys3.xdc]
+Finished Parsing XDC File [D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/Constraints_basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/Constraints_basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/OD_Main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/OD_Main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 845.082 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 845.082 ; gain = 527.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tffg1156-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 845.082 ; gain = 527.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 845.082 ; gain = 527.668
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'OD_time'
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+          NEAR_COLLISION |                               01 |                               10
+            FAR_OBSTACLE |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'sequential' in module 'OD_time'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:51 . Memory (MB): peak = 845.082 ; gain = 527.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module OD_Main 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+Module OD_time 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design OD_Main has port Identifier driven by constant 0
+WARNING: [Synth 8-3917] design OD_Main has port IDE driven by constant 0
+WARNING: [Synth 8-3917] design OD_Main has port reserved_bit driven by constant 0
+WARNING: [Synth 8-3917] design OD_Main has port data[15] driven by constant 0
+WARNING: [Synth 8-3917] design OD_Main has port data[14] driven by constant 0
+WARNING: [Synth 8-3917] design OD_Main has port data[13] driven by constant 0
+WARNING: [Synth 8-3917] design OD_Main has port data[12] driven by constant 0
+WARNING: [Synth 8-3917] design OD_Main has port data[11] driven by constant 0
+WARNING: [Synth 8-3917] design OD_Main has port data[10] driven by constant 0
+WARNING: [Synth 8-3917] design OD_Main has port data[9] driven by constant 0
+WARNING: [Synth 8-3917] design OD_Main has port data[8] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:52 . Memory (MB): peak = 845.082 ; gain = 527.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:01:01 . Memory (MB): peak = 870.836 ; gain = 553.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:01:01 . Memory (MB): peak = 890.566 ; gain = 573.152
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:01:02 . Memory (MB): peak = 890.566 ; gain = 573.152
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:01:02 . Memory (MB): peak = 890.566 ; gain = 573.152
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:01:02 . Memory (MB): peak = 890.566 ; gain = 573.152
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:01:02 . Memory (MB): peak = 890.566 ; gain = 573.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:01:02 . Memory (MB): peak = 890.566 ; gain = 573.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:01:02 . Memory (MB): peak = 890.566 ; gain = 573.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:01:02 . Memory (MB): peak = 890.566 ; gain = 573.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    39|
+|3     |LUT1   |    29|
+|4     |LUT2   |    19|
+|5     |LUT3   |   101|
+|6     |LUT4   |     2|
+|7     |LUT5   |     2|
+|8     |LUT6   |     1|
+|9     |FDCE   |     2|
+|10    |IBUF   |    17|
+|11    |OBUF   |    19|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+--------+------+
+|      |Instance |Module  |Cells |
++------+---------+--------+------+
+|1     |top      |        |   232|
+|2     |  u1     |OD_time |     8|
++------+---------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:01:02 . Memory (MB): peak = 890.566 ; gain = 573.152
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 890.566 ; gain = 186.730
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:01:03 . Memory (MB): peak = 890.566 ; gain = 573.152
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 56 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:07 . Memory (MB): peak = 897.609 ; gain = 592.844
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/OD_main/OD_main.runs/synth_1/OD_Main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file OD_Main_utilization_synth.rpt -pb OD_Main_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.484 . Memory (MB): peak = 897.609 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed May 28 23:11:34 2025...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu May 29 03:33:21 2025
+# Process ID: 14184
+# Current directory: D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/CRC_FInal/CRC_FInal.runs/synth_1
+# Command line: vivado.exe -log CRC_synthesizable.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CRC_synthesizable.tcl
+# Log file: D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/CRC_FInal/CRC_FInal.runs/synth_1/CRC_synthesizable.vds
+# Journal file: D:/College/Graduation Project/GP_COLLISION1/Graduation_Project/Final_Integration/CRC_FInal/CRC_FInal.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source CRC_synthesizable.tcl -notrace
